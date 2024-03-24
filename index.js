@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         // Send a POST request to the server
-        const response = await fetch('http://localhost:8000/users/signup', {
+        const response = await fetch('https://acm-hackathon-nine.vercel.app', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Alert the user about successful signup
         alert('Signup successful!');
-        window.location.href = 'http://localhost:5500/Tech-Phantoms/premium.html';
+        window.location.href = 'hhttps://acm-hackathon-nine.vercel.app/premium.html';
       } catch (error) {
         console.error('Error:', error);
         alert('Signup failed. Please try again later.');
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         // Send a POST request to the server
-        const response = await fetch('http://localhost:8000/users/login', {
+        const response = await fetch('https://acm-hackathon-nine.vercel.app/users/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -110,12 +110,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Alert the user about successful login
         alert('Login successful!');
 
-        window.location.href = 'http://localhost:5500/Tech-Phantoms/home.html';
+        window.location.href = 'https://acm-hackathon-nine.vercel.app//home.html';
       } catch (error) {
         console.error('Error:', error);
         alert('Login failed. Please try again later.');
 
-        window.location.href = 'http://localhost:5500/Tech-Phantoms/login.html';
+        window.location.href = 'https://acm-hackathon-nine.vercel.app//login.html';
       }
     }
     );
